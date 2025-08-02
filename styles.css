@@ -1,0 +1,62 @@
+body {
+  background-color: #0e0e0e;
+  color: white;
+}
+
+#titulo {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.box {
+  background-color: #27469ed2;
+  padding: 16px;
+  margin-top: 16px;
+  border: #ffffff70 solid 2px;
+  border-radius: 12px;
+}
+.label {
+  width: fit-content;
+  padding: 8px 16px;
+  margin: 12px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+.dulces {
+  background-color: #f8ff7d;
+  color: gray;
+  border: #02c40270 solid 2px;
+}
+.lacteos {
+  background-color: #cf7dff;
+  color: gray;
+  border: #1e0ceb70 solid 2px;
+}
+.granos {
+  background-color: #78ff75;
+  color: gray;
+  border: #048a0170 solid 2px;
+}
+span {
+  font-weight: bold;
+}
+select {
+  width: 100%;
+  padding: 8px 16px;
+  margin: 12px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  border: #ffffff70 solid 2px;
+}
+select > option {
+  background-color: #0e2258bb;
+  color: white;
+  border: none;
+}
+#pie {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}

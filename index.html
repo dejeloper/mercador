@@ -1,79 +1,86 @@
 <!DOCTYPE html>
-<html class="border-10">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Mercador</title>
+		<link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-     <h1 class="text-center text-3xl mt-8 mb-4">CHECKLIST</h1>
-		 <div class="w-4/6 mx-auto text-center text-2xl mb-8 mt-4">
-			<div class="grid grid-cols-4 gap-4">
-				<div class="bg-yellow-100 p-4 mt-4">
+     <h1 id="titulo"">CHECKLIST</h1>
+		 <section class="w-4/6 mx-auto  text-2xl mb-8 mt-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+				<div class="box text-xl">
 					<p> Producto: <span class="text-bold">Panela</span></p>
+					<p class="label dulces">dulces</p>
 					<p> Cantidad: <span class="text-semibold">1</span></p> 
 					<p> Precio: <span class="text-semibold">14000</span></p> 
 					<p> Lugar de compra: <span class="text-semibold">Don camilo</span></p> 
 					<p> Ultima compra: <span class="text-semibold">11-07-2025</span></p>
 					<select >
-						<option >Comprar</option>
-						<option >No comprar</option>
+						<option checked="false" value="1">Comprar</option>
+						<option checked="false"value="2">No comprar</option>
 					</select>
-					<p>Cantidad a comprar</p><input type="int" class="border-1 border-black-300 p-1 ">
-			</div>
-			<div class="bg-blue-100 p-4 mt-4">
+					<p>Cantidad a comprar</p><input type="number" min="0" value="0" class="w-full border-1 border-black-300 p-1 "/> 
+				</div>
+			<div class="box text-xl">
 					<p> Producto: <span class="text-bold">Leche</span></p>
+					<p class="label lacteos">lacteos</p>
 					<p> Cantidad: <span class="text-semibold">6</span></p> 
 					<p> Precio: <span class="text-semibold">28000</span></p> 
 					<p> Lugar de compra: <span class="text-semibold">D1</span></p> 
 					<p> Ultima compra: <span class="text-semibold">11-07-2025</span></p> 
 					<select >
-						<option >Comprar</option>
-						<option >No comprar</option>
+						<option checked="false" value="1">Comprar</option>
+						<option checked="false"value="2">No comprar</option>
 					</select>
-					<p>Cantidad a comprar</p><input type="int" class="border-1 border-black-300 p-1 ">
+					<p>Cantidad a comprar</p><input type="number" min="0" value="0" class="w-full border-1 border-black-300 p-1 "/>
 			</div> 
-			<div class="bg-green-100 p-4 mt-4 ">
+			<div class="box text-xl">
 					<p> Producto: <span class="text-bold">Arroz</span></p>
+					<p class="label granos">granos</p>
 					<p> Cantidad: <span class="text-semibold">1</span></p> 
 					<p> Precio: <span class="text-semibold">40000</span></p> 
 					<p> Lugar de compra: <span class="text-semibold">Zapatoca</span></p> 
-					<p> Ultima compra: <span class="text-semibold">11-07-2025</span></p>
+					<p> Ultima compra: <div class="text-semibold">11-07-2025</span></p>
 					<select >
-						<option >Comprar</option>
-						<option >No comprar</option>
+						<option checked="false" value="1">Comprar</option>
+						<option checked="false"value="2">No comprar</option>
 					</select> 
-					<p>Cantidad a comprar</p><input type="int" class="border-1 border-black-300 p-1 ">
-			</div> 
-			<div class="bg-yellow-100 p-4 mt-4">
-					<p> Producto: <span class="text-bold">Chocolate</span></p>
+					<p>Cantidad a comprar</p><input type="number" min="0" value="0" class="w-full border-1 border-black-300 p-1 "/>
+			</div>
+		
+			</div> 	
+			<div class="box text-xl">
+					<p> Producto: <span class="text-sewmibold">Chocolate</span></p>
+					<p class="label dulces">dulces</p>
 					<p> Cantidad: <span class="text-semibold">1</span></p> 
 					<p> Precio: <span class="text-semibold">12000</span></p> 
 					<p> Lugar de compra: <span class="text-semibold">D1</span></p> 
-					<p> Ultima compra: <span class="text-semibold">11-07-2025</span></p> 
-					<select >
-						<option >Comprar</option>
-						<option >No comprar</option>
+					<p> Ultima compra:<span class="text-semiboldf">11-07-2025</span></p> 
+					<select >		
+						<option checked="false" value="1">Comprar</option>
+						<option checked="false"value="2">No comprar</option>
 					</select>
-					<p>Cantidad a comprar</p><input type="int" class="border-1 border-black-300 p-1 ">
+					<p>Cantidad a comprar</p><input type="number" min="0" value="0" class="w-full border-1 border-black-300 p-1 "/>
 					
 			</div> 
-			<div class="bg-green-100 p-4 mt-4">
+			<div class="box text-xl">
 					<p> Producto: <span class="text-bold">Pan</span></p>
+					<p class="label granos">granos</p>
 					<p> Cantidad: <span class="text-semibold">4</span></p> 
 					<p> Precio: <span class="text-semibold">5000</span></p> 
 					<p> Lugar de compra: <span class="text-semibold">Exito</span></p> 
 					<p> Ultima compra: <span class="text-semibold">11-07-2025</span></p> 
 					<select >
-						<option >Comprar</option>
-						<option >No comprar</option>
+						<option checked="false" value="1">Comprar</option>
+						<option checked="false"value="2">No comprar</option>
 					</select>
-					<p>Cantidad a comprar</p><input type="int" class="border-1 border-black-300 p-1 ">
+					<p>Cantidad a comprar</p><input type="number" min="0" value="0" class="w-full border-1 border-black-300 p-1 "/>
 			</div>
-			</div>
-		</div>
+		 </section>
 		  
-		<div class="text-center text-2xl mb-8 mt-4">Fecha de revision:31/07/2025</h1>
+		<footer id="pie">Fecha de revision:02/08/2025</footer>
   </body>
-</htmlcla>
+</html>
